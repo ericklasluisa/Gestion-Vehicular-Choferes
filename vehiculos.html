@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Vehicular</title>
+    <style>
+        body {
+            background-color: rgb(218, 217, 217);
+            margin: 0px;
+            padding: 0px;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #1B3665;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        nav {
+            background-color: #000000;
+            padding: 1px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 10px;
+            padding: 5px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav li {
+            border-right: 2px solid #ffffff;
+            padding: 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav li:last-child {
+            border-right: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        nav li:hover {
+            padding: 15px;
+            background-color: #2980b9;
+        }
+
+        .menu {
+            float: left;
+            width: 15%;
+            height: 5000px;
+            background-color: #da6517ce;
+        }
+
+        .menu ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .menu ul li {
+            margin-bottom: 79px;
+            text-align: center;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 15px;
+
+        }
+
+        .menu h1 {
+            color: #074b79;
+            font-weight: bold;
+            font-size: 15px;
+
+        }
+
+        .imgLogo {
+            width: 10%;
+        }
+
+        .titulo {
+            color: #bd6009;
+            font-size: large;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: bold;
+        }
+
+        .contenido {
+            float: left;
+            width: 85%;
+            height: 1000px;
+            
+        }
+
+        .informacion {
+            width: 80%;
+            height: 350px;
+            background-color: white;
+            margin: 5%;
+            margin-left: 10%;
+            display: flex;
+            align-items: center;
+            border: 1px solid;
+            border-radius: 10px;
+
+        }
+
+        .info_box {
+            width: 25%;
+            height: 325px;
+            margin: 2%;
+            padding: 20px;
+            padding-left: 100px;
+            box-sizing: border-box;
+            text-align:left;
+            margin-bottom: 5%;
+        }
+
+        .image_box {
+            width: 25%;
+            height: 325px;
+            margin: 2%;
+            padding: 20px;
+            padding-top: 70px;
+            box-sizing: border-box;
+            border-radius: 20%;
+            
+
+        }
+
+        .image_box img{
+            width: 100%;
+            border-radius: 10%;
+        }
+
+
+        .info_box p{
+            color: #1B3665;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: medium;
+        }
+
+        .tablaViajes{
+            width: 90%;
+            height: auto;
+            margin: 5%;
+        }
+
+        .tablaViajes h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:x-large;
+            margin: 0 10%;
+        }
+        
+        .tablaViajes table{
+            margin: 2% 10%;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+            table-layout: fixed;
+            border-collapse: collapse;
+        }
+
+        .tablaViajes thead{
+            background-color:#1B3665;
+            color: white;
+        }
+
+        .tablaViajes th{
+            padding: 20px 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .tablaViajes td{
+            padding: 30px;
+            border-bottom: solid 1px ;
+
+        }
+
+        .tablaViajes tbody tr:hover{
+            background-color:#b6bfcf;
+        }
+
+        .tablaViajes tbody tr{
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            margin-top: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            align-items: center;
+            float: left;
+        }
+
+        footer {
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            margin-top: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            align-items: center;
+            float: left;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="imgLogo" src="images/LogoGestionVehicular.png" alt="Logo Gestion Vehicular">
+        <h1 align="center">Gestión Vehicular</h1>
+
+
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="vehiculos.html">VEHICULOS</a></li>
+            <li><a href="chofer.html">CHOFERES</a></li>
+        </ul>
+    </nav>
+
+    
+        <section class="menu">
+            <ul>
+                <h1 align="center">MENU</h1>
+                <li><a href="#info">Vehículo 1</a></li>
+                <li><a href="#">Vehículo 2</a></li>
+                <li><a href="#">Vehículo 3</a></li>
+                <hr>
+                <li><a href="formularios/form_ingreso_vehiculo.php">AGREGAR </a></li>
+            </ul>
+        </section>
+
+
+        <section class="contenido">
+            <section class="informacion">
+                <article class="info_box">
+                    <h1 class="titulo">Información General</h1>
+                    <p><strong class="titulo">Placa: </strong>ABC-123</p>
+                    <p><strong class="titulo">Marca: </strong>Mercedes Benz</p>
+                    <p><strong class="titulo">Modelo: </strong>O 500 RS</p>
+                    <p><strong class="titulo">Año: </strong>2020</p>
+                    <p><strong class="titulo">Tipo de Vehículo: </strong>Autobús</p>
+                    <p><strong class="titulo">Capacidad: </strong>50 pasajeros</p>
+                </article>
+                <article class="info_box">
+                    <h1 class="titulo">Información Técnica</h1>
+                    <p><strong class="titulo">Tipo de combustible: </strong>Diesel</p>
+                    <p><strong class="titulo">Motor: </strong>Mercedes-Benz OM 460 LA</p>
+                    <p><strong class="titulo">Kilometraje: </strong>60,000 km</p>
+                    <p><strong class="titulo">Peso: </strong>19,600 kg</p>
+                </article>
+                <article class="image_box">
+                    <img src="images/BusMercedes.jpg" alt="Mercedes Benz O 500 RS">
+                </article>
+                
+            </section>
+
+            <section class="tablaViajes">
+                <h1>Viajes Realizados</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Vehiculo</th>
+                            <th>Conductor</th>
+                            <th>Hora de Salida</th>
+                            <th>Hora de Llegada</th>
+                            <th>Recorrido (km)</th>
+                            <th>Timepo (h)</th>
+                        </tr>
+                    </thead>
+    
+                    <tbody>
+                        <tr>
+                            <td>PMA-7545</td>
+                            <td>Pedro Picapiedra</td>
+                            <td>20-11-2023 11:50:00</td>
+                            <td>20-11-2023 13:45:00</td>
+                            <td>70km</td>
+                            <td>1:25h</td>
+    
+                        </tr>
+                        <tr>
+                            <td>XYZ-123</td>
+                            <td>Wilma Flintstone</td>
+                            <td>21-11-2023 09:30:00</td>
+                            <td>21-11-2023 11:15:00</td>
+                            <td>50km</td>
+                            <td>1:45h</td>
+                        </tr>
+                        <tr>
+                            <td>ABC-789</td>
+                            <td>Barney Rubble</td>
+                            <td>22-11-2023 15:20:00</td>
+                            <td>22-11-2023 17:30:00</td>
+                            <td>90km</td>
+                            <td>2:10h</td>
+                        </tr>
+                        <tr>
+                            <td>JKL-567</td>
+                            <td>Betty Rubble</td>
+                            <td>23-11-2023 08:00:00</td>
+                            <td>23-11-2023 10:15:00</td>
+                            <td>60km</td>
+                            <td>2:15h</td>
+                        </tr>
+                        <tr>
+                            <td>DEF-456</td>
+                            <td>Dino</td>
+                            <td>24-11-2023 14:45:00</td>
+                            <td>24-11-2023 16:30:00</td>
+                            <td>80km</td>
+                            <td>1:45h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+    
+        </section>
+    
+
+    <footer>
+        <p>&copy Sistema de Gestión Vehicular</p>
+        <a href="#"><img width="5%" src="images/LogoFacebook.png" alt="LogoInsta"></a>
+        <a href="#"><img width="5%" src="images/LogoInsta.png" alt="LogoInsta"></a>
+        <a href="#"><img width="5%" src="images/LogoTwitter.png" alt="LogoInsta"> </a>
+    </footer>
+</body>
+
+</html>

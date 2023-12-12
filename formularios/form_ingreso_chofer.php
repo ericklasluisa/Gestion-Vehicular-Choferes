@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión Vehicular</title>
+    <style>
+        body {
+            background-color: #F2F2F2; /* Gris claro para el fondo */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: 'Arial', sans-serif; /* Selecciona una fuente fácil de leer */
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            background-color: #34495E; /* Azul oscuro para el encabezado */
+            backdrop-filter: blur(5px);
+            
+            color: white;
+            padding: 10px;
+        }
+
+        .menu {
+            border-radius: 20px;
+            background-color: #2C3E50; /* Azul más claro para la barra de navegación */
+            padding: 1px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 200px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .menu li {
+            padding: 20px;
+            transition: background-color 0.3s;
+            border: none; 
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #ECF0F1; 
+            font-weight: bold;
+            font-size: 15px;
+            display: block; 
+            width: 100%; 
+            height: 100%; 
+        }
+        
+
+        .menu li:hover {
+            background-color: #3498DB; /* Azul más claro para el efecto hover */
+        }
+
+        nav {
+            background-color: #1B3665;
+            padding: 0px;
+            margin-bottom: 5px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 10px;
+            padding: 5px;
+            display: flex;
+            justify-content:flex-end;
+        }
+
+        nav li {
+            border-right: 2px solid #fff;
+            padding: 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav li:last-child {
+            border-right: none;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            font-size: 15px;
+
+        }
+
+
+        section {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .informacion {
+            text-align: right;
+            display: flex;
+            justify-content: space-between;
+            
+            margin-left: 250px;
+            width: 50%;
+            max-width: 800px;
+        }
+
+        .informacion article {
+            margin: 5px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
+            background-color: #ECF0F1; 
+            border-radius: 8px; /* Bordes redondeados para suavizar el aspecto */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        .informacion article h1 {
+            color: #3498DB; /* Azul más claro para los títulos */
+            text-align: center;
+        }
+
+        .informacion article p {
+            color: #34495E; /* Azul oscuro para el texto */
+            padding: 20px;
+            margin: 0;
+        }
+
+        .titulo {
+            color: #3498DB; /* Azul más claro para los títulos */
+        }
+
+        .imgLogo {
+            width: 10%;
+        }
+
+        footer {
+            background-color: #34495E; /* Azul oscuro para el pie de página */
+            color: white;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .redes {
+            margin-left: auto; /* Mueve el elemento a la derecha del contenedor padre */
+            order: -1; /* Cambia el orden de aparición en el flujo flex */
+        }
+
+        .redes ul {
+            background-color: #3498DB;
+            padding: 20px;
+        }
+        img{
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="imgLogo" src="images/LogoGestionVehicular.png" alt="Logo Gestion Vehicular">
+        <h1 align="center">Gestión Vehicular</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://x.com"><img src="img/LogoTwitter.png" alt="Twitter"></a></li>
+            <li><a href="https://facebook.com"><img src="img/LogoFacebook.png" alt="Facebook"></a></li>
+            <li><a href="https://instagram.com"><img src="img/LogoInsta.png" alt="Instagram"></a></li>
+        </ul>
+    </nav>
+    <section>
+        <nav class="menu">
+            <ul>
+                <li><a href="#index.html">INICIO</a></li>
+                <li><a href="vehiculos.html">VEHICULOS</a></li>
+                <li><a href="chofer.html">CHOFERES</a></li>
+                <li><a href="formularios/login.php">SALIR</a></li>
+            </ul>
+        </nav>
+        <section class="informacion">
+            <article>
+                <h1 class="titulo">Bienvenido</h1>
+                <p>Este sistema de gestión vehicular permite llevar un control de los vehículos y choferes de la empresa.</p>
+            </article>
+        </section>
+    </section>
+
+    <footer>
+        <p>&copy Sistema de Gestión Vehicular</p>
+    </footer>
+</body>
+
+</html>
